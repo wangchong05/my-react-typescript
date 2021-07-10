@@ -1,12 +1,14 @@
 import React from 'react';
-import Button from '../../Components/Button/Button';
+// import Button from '../../Components/Button/Button';
+import Box from '../../Components/Box/Box';
 
 const About = () => {
   return (
-    <div style={{width: '300px', height: '200px', border: '1px solid blue'}}>
-      About
+    <div>
+      {/* About
       <br />
-      <Button disabled={false} variant={'light.primary'}/>
+      <Button disabled={false} variant={'light.primary'}/> */}
+      <Box label={'Box title'}/>
     </div>
   );
 }

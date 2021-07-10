@@ -12,16 +12,16 @@
 
 import React, { forwardRef } from "react";
 import styled, { StyledProps } from "styled-components";
-import { themeGet } from "@styled-system/theme-get";
-import { variant, border, typography, color, space, compose } from "styled-system";
-import { boolean } from "yargs";
+// import { themeGet } from "@styled-system/theme-get";
+// import { variant, border, typography, color, space, compose } from "styled-system";
+// import { boolean } from "yargs";
 
-// variants
-const variants = {
-  buttonVariant: variant({
-    scale: 'buttons.variantMapping',
-  }),
-};
+// // variants
+// const variants = {
+//   buttonVariant: variant({
+//     scale: 'buttons.variantMapping',
+//   }),
+// };
 
 export interface ButtonProps extends StyledProps<any> {
   variant?: 'light.primary' | 'light.secondary';
