@@ -27,7 +27,8 @@ it("renders Box correctly 02", ()=> {
 
 // 
 it("matchs snapshot", ()=> {
-  const tree = renderer.create(<Box label={"save"}></Box>).toJSON();// 创建名为save的标签，将其转换为JSON，所以这会将其转换为虚拟DOM对象
+  const tree = renderer.create(<Box label={"save"}></Box>).toJSON();
+  // 创建名为save的标签，将其转换为JSON，所以这会将其转换为虚拟DOM对象
   // 这个创建出来是个树的形式，已经将他保存到树里面，接下来期望树匹配快照
   expect(tree).toMatchSnapshot();// 每当运行这个语句来匹配快照时，它都会查看文件夹结构，并且在其中寻找名为“快照”的文件夹。
   // 这个文件夹在第一次运行时会被创建，会在这里面创建快照，并且存储
